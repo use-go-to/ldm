@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LDM</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script> <!-- Inclusion du fichier JavaScript -->
+</head>
+<body>
+
+<h1>Les Défis de Minuit</h1>
+
+
+<div class="list">
+    <br>
+<h2>Liste des Joueurs</h2>
+  <ul id="joueurs-liste"></ul> <!-- Liste des joueurs -->
+  <form onsubmit="ajouterJoueur(); return false;"> <!-- Formulaire pour ajouter un joueur -->
+    <input type="text" id="nom-joueur" placeholder="Nom du joueur" required>
+    <input type="submit" value="Ajouter">
+  </form>
+  <br>
+</div>
+
+<br>
+<br>
+
+<div class="random">
+    <br>
+    <h2>Défis aléatoire</h2>
+    <button onclick="choisirJoueursAleatoires()">Jouer</button>
+    <p id="joueurs-aleatoires"></p>
+  <br>
+  <br>
+</div>
+
+
+</body>
+</html>
